@@ -73,6 +73,13 @@ app.get('/about', (req, res) => {
         curYear: new Date().getFullYear()
     });
 });
+// projects
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects page',
+        curYear: new Date().getFullYear()
+    });
+});
 
 app.get('/bad',(req,res) => {
     res.send({
